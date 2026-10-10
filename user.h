@@ -7,24 +7,24 @@ using namespace std;
 class User{
     private:
         string username;
-        string password;
+        string hashedPassword;
     public:
-        User(string name,string psd):username(name),password(psd){};
+        User(string name,string psd):username(name),hashedPassword(psd){};
 
         string getUsername() const{
             return username;
         }
 
-        string getPassword() const {
-            return password;
+        string gethashedPassword() const {
+            return hashedPassword;
         }
 
         void setUsername(string name){
             username=name;
         }
 
-        void setPassword(string psd){
-            password=psd;
+        void sethashedPassword(string psd){
+            hashedPassword=psd;
         }
 
 };
